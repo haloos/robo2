@@ -3,10 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker'; 
 import 'tachyons';
-import { robots } from './robots';  
-import Cardlist from './Cardlist';  
+import App from './App';  
 
-ReactDOM.render( 
-            <Cardlist robots={robots}/>
-,document.getElementById('root'));
+
+ReactDOM.render(<App/>,document.getElementById('root'));
 serviceWorker.unregister();
